@@ -1,0 +1,18 @@
+[user]
+	useConfigOnly = true
+
+[alias]
+    br = branch -vv
+	bra = branch -vv --all
+	bed = branch --edit-description
+	ci = commit	-v
+    co = checkout
+    cob = checkout -b
+    graph = log --all --decorate --graph --oneline
+	st = status -sb
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[include]
+	path = ~/.gitconfig_local
