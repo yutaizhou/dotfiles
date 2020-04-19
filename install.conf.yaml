@@ -2,7 +2,7 @@
     link:
         create: true
         relink: true
-
+        #force: true
 - link:
     ~/.vimrc: 
     ~/.gitconfig:

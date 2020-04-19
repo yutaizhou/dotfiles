@@ -8,7 +8,12 @@
 	ci = commit	-v
     co = checkout
     cob = checkout -b
+    di = diff
+    dis = diff --stat
+    dc = diff --cached
+	dcs = diff --cached --stat
     graph = log --all --decorate --graph --oneline
+    root = rev-parse --show-toplevel
 	st = status -sb
 
 [core]
