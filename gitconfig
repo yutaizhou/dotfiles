@@ -2,18 +2,18 @@
 	useConfigOnly = true
 
 [alias]
-    br = branch -vv
+	br = branch -vv
 	bra = branch -vv --all
 	bed = branch --edit-description
 	ci = commit	-v
-    co = checkout
-    cob = checkout -b
-    di = diff
-    dis = diff --stat
-    dc = diff --cached
+	co = checkout
+	cob = checkout -b
+	di = diff
+	dis = diff --stat
+	dc = diff --cached
 	dcs = diff --cached --stat
-    graph = log --all --decorate --graph --oneline
-    root = rev-parse --show-toplevel
+	graph = log --all --decorate --graph --oneline
+	root = rev-parse --show-toplevel
 	st = status -sb
 
 [core]
