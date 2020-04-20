@@ -8,6 +8,11 @@
 *.so
 *.pyc
 
+# Distributions and packages #
+##########################
+*.egg-info/
+*.egg
+
 # Editing tools and IDEs #
 ##########################
 [._]*.sw[a-p]
@@ -21,6 +26,9 @@
 # Logs and databases #
 ######################
 *.log
+*.logs
+log/
+logs/
 *.sqlite
 
 # OS generated files #
