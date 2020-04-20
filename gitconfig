@@ -17,6 +17,7 @@
 	st = status -sb
 
 [core]
+	editor=vim
 	excludesfile = ~/.gitignore_global
 
 [include]
