@@ -7,3 +7,8 @@ set ruler
 
 " Search
 set ignorecase
+
+let $LOCALFILE=expand("~/.vimrc_local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif
