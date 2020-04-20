@@ -1,12 +1,17 @@
 - defaults:
     link:
         create: true
-        relink: true
         #force: true
+        relink: true
 - link:
-    ~/.vimrc: 
+    ~/.bash:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.dotfiles: ''
     ~/.gitconfig:
     ~/.gitignore_global:
+    ~/.shell:
+    ~/.vimrc: 
 
 - shell: []
 - clean: ['~']
