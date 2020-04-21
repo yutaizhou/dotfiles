@@ -1,6 +1,6 @@
 
 # Use colors in coreutils utilities output
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias grep='grep --color'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -19,8 +19,7 @@ mcd() {
     mkdir "${1}" && cd "${1}"
 }
 
-cdls(){ cd "$@" && ls; }
-alias cd='cdls'
+cd() { builtin cd "$@" && ls; }
 
 up()
 {
