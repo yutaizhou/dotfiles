@@ -1,19 +1,3 @@
-# # get current branch in git repo
-# function parse_git_branch() {
-# 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-# 	if [ ! "${BRANCH}" == "" ]
-# 	then
-# 		echo "[${BRANCH}]"
-# 	else
-# 		echo ""
-# 	fi
-# }
-
-# export PS1="\[\033[01;32m\]\h\[\e[m\]:\[\e[36m\]\`parse_git_branch\`\[\e[m\]\\[\033[01;34m\]\w\[\e[m\]\\$ "
-
-# above was the original, ignore for now...
-#!/usr/bin/env bash
-
 # Shell prompt based on the Solarized Dark theme.
 # Screenshot: http://i.imgur.com/EkEtphC.png
 # Heavily inspired by @necolas’s prompt: https://github.com/necolas/dotfiles
@@ -99,26 +83,20 @@ else
 	violet="\e[1;35m";
 	white="\e[1;37m";
 	yellow="\e[1;33m";
-    
-    lightblue="\e[1;94m";
-	lightyellow="\e[1;93m";
-    lightred="\e[1;91m";
-    lightpurple="\e[1;95m";
-
 fi;
 
 # Highlight the user name when logged in as root.
 if [[ "${USER}" == "root" ]]; then
-	userStyle="${lightred}";
-else
 	userStyle="${red}";
+else
+	userStyle="${orange}";
 fi;
 
 # Highlight the hostname when connected via SSH.
 if [[ "${SSH_TTY}" ]]; then
-	hostStyle="${bold}${green}";
+	hostStyle="${green}";
 else
-	hostStyle="${bold}${green}";
+	hostStyle="${green}";
 fi;
 
 # Set the terminal title and prompt.
@@ -126,9 +104,9 @@ PS1="\[\033]0;\W\007\]"; # working directory base name
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
-PS1+="\[${hostStyle}\]\h"; # host
+PS1+="\[\e[01;32m\]\h"; # host, the green was weird. $ didn't work???
 PS1+="\[${white}\] in ";
-PS1+="\[${cyan}\]\w"; # working directory full path
+PS1+="\[${blue}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${white}\]\")"; # Git repository details
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
