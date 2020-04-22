@@ -5,6 +5,23 @@ This is my personal dotfile management repo, and it is managed using [Dotbot][do
 
 I hope to use this as a tool to mobilize my personal configurations, and to track my own CLI environment learning journey.
 
+Todo
+-------
+
+#### Prompt
+- [ ] Fix conda env such that all OS will display it, not just MacOS
+
+- [ ] Make rc for zsh due to MacOS catalina
+
+#### Notebook
+
+- [ ] Jupyter notebook plugins & themes
+
+#### Executables
+- [ ] broot
+
+- [ ] jupyter notebook
+
 Credit
 -------
 This dotfile management repo is modeled after Anish Athalye's [personal dotfile repo][anishathalye_dotfiles]. Thanks for creating the awesome package and for open sourcing your personal configurations, Anish!
