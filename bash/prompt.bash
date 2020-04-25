@@ -57,16 +57,6 @@ prompt_git() {
 	echo -e "${1}${branchName}${2}${s}";
 }
 
-# may need to create a general env checker in the future, not just for conda
-check_conda_env ()
-{
-    if [ ! -z "$CONDA_DEFAULT_ENV" ]; then
-        printf -- "%s" "(`basename $CONDA_DEFAULT_ENV`)"
-    else
-        printf -- "%s" ""
-    fi
-}
-
 # colors :)
 esc="\e"
 bold='';
@@ -82,8 +72,8 @@ yellow="[33;1m";
 
 
 # Set the terminal title and prompt.
+PROMPT_COMMAND="printf '\n'"
 PS1="\[\033]0;\W\007\]"; # working directory base name
-PS1+="\n"; # newline
 PS1+="\[${esc}${yellow}\]\u"; # username
 PS1+="\[${esc}${white}\] at ";
 PS1+="\[${esc}${green}\]\h"; # host
@@ -91,7 +81,7 @@ PS1+="\[${esc}${white}\] in ";
 PS1+="\[${esc}${blue}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${esc}${white}\] on \[${esc}${purple}\]\" \"\[${esc}${red}\]\")"; # Git repository details
 PS1+="\[${esc}${reset}\]\n";
-PS1+="\[${esc}${white}\]$(check_conda_env)\$ \[${esc}${reset}\]"; # `$` (and reset color)
+PS1+="\[${esc}${white}\]\$ \[${esc}${reset}\]"; # `$` (and reset color)
 export PS1;
 
 PS2="\[${esc}${yellow}\]→ \[${esc}${reset}\]";

@@ -1,1 +1,6 @@
-changeps1: False
+channels:
+  - defaults
+  - tartansandal
+
+create_default_packages:
+    - conda-bash-completion
