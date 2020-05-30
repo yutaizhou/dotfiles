@@ -22,6 +22,7 @@
 \#*\#
 \.#*
 .ipynb_checkpoints/
+.vscode/
 
 # Logs and databases #
 ######################

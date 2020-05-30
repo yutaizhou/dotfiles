@@ -1,7 +1,7 @@
 " Interface
 syntax on 
 colorscheme desert
-set relativenumber
+set number relativenumber
 set cursorline
 set ruler
 
