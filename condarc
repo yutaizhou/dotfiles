@@ -1,6 +1,8 @@
 channels:
   - defaults
   - tartansandal
+  - anaconda
+  - pytorch
 
 create_default_packages:
     - conda-bash-completion
