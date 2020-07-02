@@ -23,8 +23,6 @@ mcd() {
     mkdir "${1}" && cd "${1}"
 }
 
-cd() { builtin cd "$@" && ls; }
-
 up()
 {
     local cdir="$(pwd)"
