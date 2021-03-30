@@ -8,11 +8,14 @@
 	ap = add --patch
 
 	br = branch -vv
+	brd = branch -D
 
 	ci = commit -v
+	cia = commit -va
 	cim = commit -m
-	cia = commit -v --amend
-	ciam = commit -m --amend
+	ciam = commit -ma
+	am = commit -v --amend
+	amm = commit -m --amend
 
 	co = checkout
 	cob = checkout -b
