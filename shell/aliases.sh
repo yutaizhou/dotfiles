@@ -46,7 +46,8 @@ up()
 }
 
 alias cdgr='cd "$(git root)"'
-alias g="git"
 alias ca="conda activate"
 alias cel="conda env list"
 alias cl="conda list"
+alias g="git"
+alias t="tmux"
