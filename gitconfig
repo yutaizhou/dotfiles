@@ -8,7 +8,7 @@
 	ap = add --patch
 
 	br = branch -vv
-	brd = branch -D
+	brd = branch -d
 
 	ci = commit -v
 	cia = commit -va
