@@ -17,6 +17,8 @@
 	am = commit -v --amend
 	amm = commit -m --amend
 
+	cfg = config
+
 	co = checkout
 	cob = checkout -b
 
@@ -26,6 +28,8 @@
 	dcs = diff --cached --stat
 
 	graph = log --all --decorate --graph --oneline
+
+	unstage = restore --staged
 
 	rmt = remote
 
@@ -37,10 +41,11 @@
 	editor=vim
 	excludesfile = ~/.gitignore_global
 
-[include]
-	path = ~/.gitconfig_local
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[include]
+	path = ~/.gitconfig_local
