@@ -14,8 +14,8 @@
 	cia = commit -va
 	cim = commit -m
 	ciam = commit -ma
-	am = commit -v --amend
-	amm = commit -m --amend
+	amend = commit -v --amend
+	amendn = commit --amend --no-edit
 
 	cfg = config
 
