@@ -29,7 +29,10 @@
 
 	graph = log --all --decorate --graph --oneline
 
-	unstage = restore --staged
+	dis = restore
+	disp = restore -p
+	us = restore --staged
+	usp = restore --staged -p
 
 	rmt = remote
 
