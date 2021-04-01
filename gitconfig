@@ -29,6 +29,9 @@
 
 	graph = log --all --decorate --graph --oneline
 
+	rb = rebase
+	rbi = rebase -i
+
 	dis = restore
 	disp = restore -p
 	us = restore --staged
@@ -37,6 +40,9 @@
 	rem = remote
 
 	root = rev-parse --show-toplevel
+
+	sw = switch
+	swc = switch -c
 
 	st = status -sb
 
