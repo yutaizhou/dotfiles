@@ -2,7 +2,7 @@
 	useConfigOnly = true
 
 [alias]
-	alias = config --get-regexp alias
+	ali = config --get-regexp alias
 
 	a = add
 	ap = add --patch
@@ -14,8 +14,8 @@
 	cia = commit -va
 	cim = commit -m
 	ciam = commit -ma
-	amend = commit -v --amend
-	amendn = commit --amend --no-edit
+	amd = commit -v --amend
+	amdn = commit --amend --no-edit
 
 	cfg = config
 
@@ -34,7 +34,7 @@
 	us = restore --staged
 	usp = restore --staged -p
 
-	rmt = remote
+	rem = remote
 
 	root = rev-parse --show-toplevel
 
