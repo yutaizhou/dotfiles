@@ -41,6 +41,12 @@
 
 	root = rev-parse --show-toplevel
 
+	sm = submodule
+	smpush = push --recurse-submodules=on-demand
+	smpull = pull --recurse-submodules
+	smd = submodule foreach 'git diff'
+	smdc = submodule foreach 'git diff --cached'
+
 	sw = switch
 	swc = switch -c
 
