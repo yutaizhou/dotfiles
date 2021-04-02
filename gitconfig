@@ -7,6 +7,8 @@
 	a = add
 	ap = add --patch
 
+	bl = blame
+
 	bs  = bisect
 	bsg = bisect good
 	bsb = bisect bad
@@ -29,7 +31,9 @@
 	ds = diff --stat
 	dcs = diff --cached --stat
 
-	graph = log --all --decorate --graph --oneline
+	logg = log --all --decorate --graph --oneline
+
+	mg = merge
 
 	rb = rebase
 	rbi = rebase -i
@@ -57,7 +61,7 @@
 	sw = switch
 	swc = switch -c
 
-	st = status -sb
+	s = status -sb
 
 	sta = stash
 	stap = stash --patch
