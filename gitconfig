@@ -7,13 +7,15 @@
 	a = add
 	ap = add --patch
 
+	bs  = bisect
+	bsg = bisect good
+	bsb = bisect bad
+
 	br = branch -vv
 	brd = branch -d
 
 	ci = commit -v
-	cia = commit -va
 	cim = commit -m
-	ciam = commit -ma
 	amd = commit -v --amend
 	amdn = commit --amend --no-edit
 
@@ -31,6 +33,11 @@
 
 	rb = rebase
 	rbi = rebase -i
+	rbc = rebase --continue
+
+	rs = reset #default to --mixed
+	rss = reset --soft
+	rsh = reset --hard
 
 	dis = restore
 	disp = restore -p
@@ -51,6 +58,13 @@
 	swc = switch -c
 
 	st = status -sb
+
+	sta = stash
+	stap = stash --patch
+	stal = stash list
+	staa = stash apply
+	stad = stash drop
+	stab = stash branch
 
 [core]
 	editor=vim
