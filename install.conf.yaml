@@ -15,6 +15,10 @@
     ~/.shell:
     ~/.vimrc: 
     ~/.tmux.conf:
+    ~/.config/alacritty/alacritty.yml:
+        path: config/alacritty/alacritty.yml
+    ~/.config/htop/htoprc:
+        path: config/htop/htoprc
 
 - shell: []
 - clean: ['~']
