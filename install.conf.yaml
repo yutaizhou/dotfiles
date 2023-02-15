@@ -4,16 +4,15 @@
       relink: true
 
 - clean:
-  ~/:
-    force: true
-  ~/.config:
-    recursive: true
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
 
 - shell: []
 
 - link: # symlink location -> original dotfile in repo
     ~/.bash:
-    ~/.bash_profile:
     ~/.bashrc:
     ~/.condarc:
     ~/.alacritty.yml:
@@ -25,4 +24,3 @@
     ~/.shell:
     ~/.tmux.conf:
     ~/.vimrc:
-
