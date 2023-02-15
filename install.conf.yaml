@@ -1,24 +1,28 @@
 - defaults:
     link:
-        create: true
-        #force: true
-        relink: true
-- link:
+      create: true
+      relink: true
+
+- clean:
+  ~/:
+    force: true
+  ~/.config:
+    recursive: true
+
+- shell: []
+
+- link: # symlink location -> original dotfile in repo
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
     ~/.condarc:
-    ~/.dotfiles: ''
+    ~/.alacritty.yml:
+    ~/.config/starship.toml:
+      path: starship.toml
     ~/.gitconfig:
     ~/.gitignore_global:
-    ~/.inputrc: 
+    ~/.inputrc:
     ~/.shell:
-    ~/.vimrc: 
     ~/.tmux.conf:
-    ~/.config/alacritty/alacritty.yml:
-        path: config/alacritty/alacritty.yml
-    ~/.config/htop/htoprc:
-        path: config/htop/htoprc
+    ~/.vimrc:
 
-- shell: []
-- clean: ['~']

@@ -1,0 +1,26 @@
+format = """
+$all$directory
+$character
+"""
+
+[cmd_duration]
+disabled = true
+
+[conda]
+ignore_base = false
+format = "[$symbol$environment]($style)"
+
+[directory]
+truncate_to_repo = false
+style = "bold blue"
+
+[hostname]
+format = "[$hostname]($style) "
+ssh_only = false
+
+[username]
+format = "[$user]($style) at "
+show_always = true
+
+[shell]
+disabled = false
