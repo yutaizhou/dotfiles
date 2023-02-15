@@ -1,5 +1,6 @@
 [user]
 	useConfigOnly = true
+	name = Yutai Zhou
 
 [alias]
 	ali = config --get-regexp alias
@@ -51,6 +52,8 @@
 	rem = remote
 
 	root = rev-parse --show-toplevel
+
+	rv = revert
 
 	sm = submodule
 	smpush = push --recurse-submodules=on-demand

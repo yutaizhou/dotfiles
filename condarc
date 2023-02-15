@@ -5,4 +5,5 @@ channels:
   - pytorch
 
 create_default_packages:
-    - conda-bash-completion
+  - conda-bash-completion
+changeps1: false
