@@ -21,6 +21,8 @@
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.inputrc:
+    ~/.ipython:
+      path: ipython
     ~/.shell:
     ~/.tmux.conf:
     ~/.vimrc:
