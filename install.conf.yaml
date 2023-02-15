@@ -9,6 +9,11 @@
     ~/.config:
       recursive: true
 
+- create:
+    ~/.ssh:
+      mode: 0700
+    ~/projects:
+
 - shell: []
 
 - link: # symlink location -> original dotfile in repo
