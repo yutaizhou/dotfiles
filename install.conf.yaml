@@ -28,3 +28,4 @@
     ~/.tmuxp:
       path: tmuxp
     ~/.vimrc:
+    ~/.zshrc:
