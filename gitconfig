@@ -1,6 +1,7 @@
 [user]
 	useConfigOnly = true
 	name = Yutai Zhou
+    email = yutaizh@gmail.com
 
 [alias]
 	ali = config --get-regexp alias
