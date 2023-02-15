@@ -5,6 +5,13 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 else
     alias ls='ls --color=auto'
 fi
+alias ls='exa --color=auto'
+alias ll='exa -lah'
+
+alias cd='z'
+alias cdgr='cd "$(git root)"'
+
+alias cat='bat'
 
 alias g="git"
 alias t="tmux"
@@ -18,7 +25,6 @@ alias ca="conda activate"
 alias cel="conda env list"
 alias cl="conda list"
 # Aliases to protect against overwriting
-
 alias cp='cp -i'
 alias mv='mv -i'
 

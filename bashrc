@@ -38,3 +38,9 @@ fi
 if [ -f ~/.bashrc_local_after ]; then
     source ~/.bashrc_local_after
 fi
+eval "$(zoxide init bash)"
+eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa_personal
+
+export http_proxy=http://llproxy.llan.ll.mit.edu:8080
+export https_proxy=http://llproxy.llan.ll.mit.edu:8080
+. "$HOME/.cargo/env"
