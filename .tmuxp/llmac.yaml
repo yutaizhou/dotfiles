@@ -1,0 +1,28 @@
+session_name: mitsc
+windows:
+- window_name: g46
+  layout: main-vertical
+  options:
+    main-pane-width: 110
+  shell_command_before:
+    - ssh yutaizhou@g46-system76a
+  panes:
+    - 
+    - watch -n 1 nvidia-smi
+    -
+
+- window_name: txe1
+  layout: main-vertical
+  shell_command_before:
+    - ssh yutai@txe1-login.mit.edu
+  panes:
+    - 
+    - watch -n 1 LLstat
+    - watch -n 1 LLfree
+
+- window_name: mac
+  layout: even-vertical
+  panes:
+    - 
+    - 
+

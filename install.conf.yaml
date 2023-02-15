@@ -25,4 +25,6 @@
       path: ipython
     ~/.shell:
     ~/.tmux.conf:
+    ~/.tmuxp:
+      path: tmuxp
     ~/.vimrc:
