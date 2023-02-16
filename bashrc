@@ -23,11 +23,8 @@ source ~/.shell/external.sh
 # Aliases
 source ~/.shell/aliases.sh
 
-# Custom prompt
-source ~/.bash/prompt.bash
-
 # Plugins
-source ~/.bash/plugins.bash
+# source ~/.bash/plugins.bash
 
 # Allow local customizations in the ~/.shell_local_after file
 if [ -f ~/.shell_local_after ]; then
@@ -38,8 +35,11 @@ fi
 if [ -f ~/.bashrc_local_after ]; then
     source ~/.bashrc_local_after
 fi
+
+# all of these need to be conditional
 eval "$(zoxide init bash)"
 eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa_personal
+eval "$(starship init bash)"
 
 export http_proxy=http://llproxy.llan.ll.mit.edu:8080
 export https_proxy=http://llproxy.llan.ll.mit.edu:8080
