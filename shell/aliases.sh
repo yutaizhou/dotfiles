@@ -11,6 +11,7 @@ alias ll='exa -lah'
 alias cd='z'
 alias cdgr='cd "$(git root)"'
 
+alias c="clear"
 alias cat='bat'
 
 alias t="tmux"
@@ -30,6 +31,7 @@ alias mv='mv -i'
 
 alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'s
+alias count='find . -type f | wc -l'
 
 # Git aliases
 alias g="git"
