@@ -13,7 +13,6 @@ alias cdgr='cd "$(git root)"'
 
 alias cat='bat'
 
-alias g="git"
 alias t="tmux"
 alias tl="tldr"
 
@@ -28,3 +27,13 @@ alias cl="conda list"
 alias cp='cp -i'
 alias mv='mv -i'
 
+
+alias reload="exec ${SHELL} -l"
+alias path='echo -e ${PATH//:/\\n}'s
+
+# Git aliases
+alias g="git"
+alias ga="git add"
+alias gs="git status"
+alias gb="git branch"
+alias gr="git remote"
