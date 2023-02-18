@@ -24,6 +24,10 @@ alias egrep='egrep --color=auto'
 alias ca="conda activate"
 alias cel="conda env list"
 alias cl="conda list"
+
+alias ma="mamba activate"
+alias mel="mamba env list"
+alias ml="mamba list"
 # Aliases to protect against overwriting
 alias cp='cp -i'
 alias mv='mv -i'
