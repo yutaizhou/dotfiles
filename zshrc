@@ -84,7 +84,7 @@ zsh-vi-mode # need to add before fzf-history search cuz keybinding conflict
 zsh-fzf-history-search
 zsh-syntax-highlighting
 )
-ZSH_TMUX_AUTOSTART="true"
+# ZSH_TMUX_AUTOSTART="true"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -122,21 +122,28 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/YU29127/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/YU29127/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/YU29127/opt/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/YU29127/opt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 export http_proxy=http://llproxy.llan.ll.mit.edu:8080
 export https_proxy=http://llproxy.llan.ll.mit.edu:8080
 eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa_personal
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/yu29127/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/yu29127/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/Users/yu29127/mambaforge/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/yu29127/mambaforge/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/Users/yu29127/mambaforge/etc/profile.d/mamba.sh" ]; then
+    . "/Users/yu29127/mambaforge/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
+

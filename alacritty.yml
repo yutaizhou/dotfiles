@@ -111,7 +111,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: DejaVu Sans Mono for Powerline
+    family: Menlo
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -420,12 +420,12 @@ colors:
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-# shell:
-#  program: /bin/bash
-#  args:
-#  - -l
-#  - -c
-  #- "tmux attach || tmux"
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
 
 # Startup directory
 #
