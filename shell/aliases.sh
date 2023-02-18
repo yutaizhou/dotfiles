@@ -1,19 +1,34 @@
+# check if the command exists, good for replacement tools like exa and z
+is_command() {
+	command -v "$1" &> /dev/null
+}
 
-# Use colors in coreutils utilities output
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    alias ls='ls -G'
-else
-    alias ls='ls --color=auto'
+if is_command z
+then 
+    alias cd='z'
+fi 
+
+if is_command bat
+then 
+    alias cat='bat'
 fi
-alias ls='exa --color=auto'
-alias ll='exa -lah'
 
-alias cd='z'
+if is_command exa
+then
+    alias ls='exa --color=auto --group-directories-first'
+    alias ll='exa -la --group-directories-first' # long + showhidden 
+    alias lt='exa --tree --level=2 --group-directories-first'
+    alias lt3='exa --tree --level=3 --group-directories-first'
+else
+    alias ls='ls --color=auto --group-directories-first'
+    alias ll='ls -la --group-directories-first'
+fi
+
+
+
 alias cdgr='cd "$(git root)"'
+alias c="clear"
 
-alias cat='bat'
-
-alias g="git"
 alias t="tmux"
 alias tl="tldr"
 
@@ -32,3 +47,14 @@ alias ml="mamba list"
 alias cp='cp -i'
 alias mv='mv -i'
 
+
+alias reload="exec ${SHELL} -l"
+alias path='echo -e ${PATH//:/\\n}'s
+alias count='find . -type f | wc -l'
+
+# Git aliases
+alias g="git"
+alias ga="git add"
+alias gs="git status"
+alias gb="git branch"
+alias gr="git remote"
