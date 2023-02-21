@@ -1,6 +1,11 @@
+call plug#begin()
+Plug 'tomasiser/vim-code-dark'
+Plug 'tpope/vim-surround'
+call plug#end()
+
 " Interface
 syntax on 
-colorscheme desert
+colorscheme codedark
 set number relativenumber
 set cursorline
 set ruler
