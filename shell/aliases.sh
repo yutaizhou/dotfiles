@@ -1,3 +1,12 @@
+# Shortcuts for dotbot install
+dotget() {
+    (cd ~/dotfiles ; ./install)
+}
+
+dotlget() {
+    (cd ~/dotfiles_local ; ./install)
+}
+
 # check if the command exists, good for replacement tools like exa and z
 is_command() {
 	command -v "$1" &> /dev/null

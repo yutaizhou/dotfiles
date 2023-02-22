@@ -124,7 +124,7 @@ eval "$(zoxide init zsh)"
 
 export http_proxy=http://llproxy.llan.ll.mit.edu:8080
 export https_proxy=http://llproxy.llan.ll.mit.edu:8080
-eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa_personal
+eval $(ssh-agent -s)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -146,4 +146,3 @@ if [ -f "/Users/yu29127/mambaforge/etc/profile.d/mamba.sh" ]; then
     . "/Users/yu29127/mambaforge/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
-
