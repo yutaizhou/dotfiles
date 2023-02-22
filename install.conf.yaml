@@ -10,8 +10,6 @@
       recursive: true
 
 - create:
-    ~/.ssh:
-      mode: 0700
     ~/projects:
 
 - shell: []
