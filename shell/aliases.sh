@@ -64,6 +64,6 @@ alias count='find . -type f | wc -l'
 # Git aliases
 alias g="git"
 alias ga="git add"
-alias gs="git status"
+alias gs="git status -sb"
 alias gb="git branch"
 alias gr="git remote"

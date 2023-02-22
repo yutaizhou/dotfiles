@@ -1,8 +1,3 @@
-[user]
-	useConfigOnly = true
-	name = Yutai Zhou
-    email = yutaizh@gmail.com
-
 [alias]
 	ali = config --get-regexp alias
 
@@ -74,6 +69,10 @@
 	stad = stash drop
 	stab = stash branch
 
+[user]
+	useConfigOnly = true # don't guess name and email, always ask 
+	name = Yutai Zhou
+
 [core]
 	editor=vim
 	excludesfile = ~/.gitignore_global
@@ -83,6 +82,9 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[init]
+	defaultBranch = master
 
 [include]
 	path = ~/.gitconfig_local
