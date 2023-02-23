@@ -20,6 +20,8 @@
 
 	cfg = config
 
+	cleanall = clean -fdx 
+
 	co = checkout
 	cob = checkout -b
 
@@ -56,6 +58,7 @@
 	smpull = pull --recurse-submodules
 	smd = submodule foreach 'git diff'
 	smdc = submodule foreach 'git diff --cached'
+	update-submodules = submodule update --init --recursive # note the lack of --remote
 
 	sw = switch
 	swc = switch -c
