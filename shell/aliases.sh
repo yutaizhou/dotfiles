@@ -1,10 +1,10 @@
 # Shortcuts for dotbot install
-dotget() {
-    (cd ~/dotfiles ; ./install)
+idf() {
+    (cd ~/.dotfiles && git pull --ff-only && ./install)
 }
 
-dotlget() {
-    (cd ~/dotfiles_local ; ./install)
+idfl() {
+    (cd ~/.dotfiles_local && git pull --ff-only && ./install)
 }
 
 # check if the command exists, good for replacement tools like exa and z
