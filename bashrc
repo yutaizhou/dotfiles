@@ -22,7 +22,7 @@ source ~/.shell/external.sh
 
 # Aliases
 source ~/.shell/aliases.sh
-alias reload="source ~/.zshrc"
+alias reload="source ~/.bashrc"
 
 # Plugins
 # source ~/.bash/plugins.bash
@@ -36,12 +36,3 @@ fi
 if [ -f ~/.bashrc_local_after ]; then
     source ~/.bashrc_local_after
 fi
-
-# all of these need to be conditional
-eval $(ssh-agent -s) #&& ssh-add ~/.ssh/id_rsa_personal
-eval "$(zoxide init bash)"
-eval "$(starship init bash)"
-
-export http_proxy=http://llproxy.llan.ll.mit.edu:8080
-export https_proxy=http://llproxy.llan.ll.mit.edu:8080
-. "$HOME/.cargo/env"
