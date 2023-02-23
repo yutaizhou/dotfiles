@@ -1,9 +1,10 @@
-channels:
-  - defaults
-  - tartansandal
-  - anaconda
-  - pytorch
-
-create_default_packages:
-  - conda-bash-completion
-changeps1: false
+# channels:
+#   - defaults
+#   - anaconda
+#   - conda-forge
+#   - pytorch
+#   - tartansandal
+# solver: libmamba
+# #create_default_packages:
+# #  - conda-bash-completion
+# changeps1: false
