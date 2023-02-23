@@ -22,6 +22,7 @@ source ~/.shell/external.sh
 
 # Aliases
 source ~/.shell/aliases.sh
+alias reload="source ~/.zshrc"
 
 # Plugins
 # source ~/.bash/plugins.bash

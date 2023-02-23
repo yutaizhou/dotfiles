@@ -118,6 +118,8 @@ source ~/.shell/aliases.sh
 source ~/.shell/bootstrap.sh
 source ~/.shell/external.sh
 
+alias reload="source ~/.zshrc"
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 

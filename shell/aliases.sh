@@ -57,7 +57,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 
-alias reload="exec ${SHELL} -l"
+# alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'s
 alias count='find . -type f | wc -l'
 
