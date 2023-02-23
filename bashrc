@@ -38,8 +38,8 @@ if [ -f ~/.bashrc_local_after ]; then
 fi
 
 # all of these need to be conditional
+eval $(ssh-agent -s) #&& ssh-add ~/.ssh/id_rsa_personal
 eval "$(zoxide init bash)"
-eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa_personal
 eval "$(starship init bash)"
 
 export http_proxy=http://llproxy.llan.ll.mit.edu:8080

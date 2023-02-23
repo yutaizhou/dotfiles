@@ -113,6 +113,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+if [ -f ~/.shell_local_before ]; then
+    source ~/.shell_local_before
+fi
+
+if [ -f ~/.zshrc_local_before ]; then
+    source ~/.zshrc_local_before
+fi
+
 source ~/.shell/functions.sh
 source ~/.shell/aliases.sh
 source ~/.shell/bootstrap.sh
@@ -122,6 +130,14 @@ alias reload="source ~/.zshrc"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+if [ -f ~/.shell_local_after ]; then
+    source ~/.shell_local_after
+fi
+
+if [ -f ~/.zshrc_local_after ]; then
+    source ~/.zshrc_local_after
+fi
 
 
 export http_proxy=http://llproxy.llan.ll.mit.edu:8080
