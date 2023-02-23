@@ -25,7 +25,7 @@ source ~/.shell/aliases.sh
 alias reload="source ~/.bashrc"
 
 # Plugins
-# source ~/.bash/plugins.bash
+source ~/.bash/plugins.bash
 
 # Allow local customizations in the ~/.shell_local_after file
 if [ -f ~/.shell_local_after ]; then
