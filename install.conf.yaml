@@ -15,12 +15,14 @@
 - shell: []
 
 - link: # symlink location -> original dotfile in repo
+
+    ~/.alacritty.yml:
     ~/.bash:
     ~/.bashrc:
     ~/.condarc:
-    ~/.alacritty.yml:
     ~/.config/starship.toml:
       path: starship.toml
+    ~/.dotfiles: ''
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.inputrc:
@@ -30,7 +32,7 @@
     ~/.tmux.conf:
     ~/.tmuxp:
       path: tmuxp
-    ~/.vimrc:
     ~/.vim:
       path: vim
+    ~/.vimrc:
     ~/.zshrc:
