@@ -4,7 +4,11 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin()
+Plug 'airblade/vim-gitgutter'
 Plug 'tomasiser/vim-code-dark'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 " Plug 'valloric/youcompleteme'
 call plug#end()
@@ -12,6 +16,7 @@ call plug#end()
 " Interface
 syntax on 
 colorscheme codedark
+set showmatch
 set number relativenumber
 set cursorline
 set ruler
@@ -22,11 +27,6 @@ set hlsearch
 set ignorecase
 set incsearch
 set smartcase
-
-let $LOCALFILE=expand("~/.vimrc_local")
-if filereadable($LOCALFILE)
-    source $LOCALFILE
-endif
 
 " Indentation
 set autoindent
@@ -47,3 +47,8 @@ set wrap
 " Key mappings
 map H ^
 map L $
+
+let $LOCALFILE=expand("~/.vimrc_local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif
