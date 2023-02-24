@@ -7,4 +7,4 @@
 # solver: libmamba
 # #create_default_packages:
 # #  - conda-bash-completion
-# changeps1: false
+changeps1: false

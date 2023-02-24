@@ -12,7 +12,7 @@ is_command() {
 	command -v "$1" &> /dev/null
 }
 
-if is_command z
+if is_command zoxide
 then 
     alias cd='z'
 fi 
