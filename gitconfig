@@ -15,12 +15,12 @@
 
 	ci = commit -v
 	cim = commit -m
-	amd = commit -v --amend
-	amdn = commit --amend --no-edit
+	amend = commit -v --amend
+	amendn = commit --amend --no-edit
 
 	cfg = config
 
-	cleanall = clean -fdx 
+	cleanall = clean -fdx
 
 	co = checkout
 	cob = checkout -b
