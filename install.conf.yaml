@@ -16,6 +16,7 @@
     ~/.alacritty.yml:
     ~/.bash:
     ~/.bashrc:
+    ~/.bash_profile:
     ~/.condarc:
     ~/.config/starship.toml: starship.toml
     ~/.dotfiles: ''
