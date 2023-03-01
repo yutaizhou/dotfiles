@@ -1,10 +1,16 @@
 # Shortcuts for dotbot install
 idf() {
+    (echo "Installing Dotfiles (main)")
     (cd ~/.dotfiles && git pull --ff-only && ./install)
 }
 
 idfl() {
+    (echo "Installing Dotfiles (local)")
     (cd ~/.dotfiles_local && git pull --ff-only && ./install)
+}
+
+idfa() {
+    (idf; idfl)
 }
 
 # check if the command exists, good for replacement tools like exa and z
