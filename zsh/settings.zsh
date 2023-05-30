@@ -9,10 +9,10 @@ setopt interactivecomments
 export EDITOR=vim
 
 #Initialize completion
-autoload -Uz compinit && compinit -i
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' menu select=4
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+# zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 zmodload zsh/complist
 # Use vim style navigation keys in menu completion
 bindkey -M menuselect 'h' vi-backward-char
