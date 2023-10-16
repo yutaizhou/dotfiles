@@ -45,6 +45,7 @@ alias cdgr='cd "$(git root)"'
 alias c="clear"
 
 alias t="tmux"
+alias ta="tmux attach"
 alias tl="tldr"
 
 alias grep='grep --color'
