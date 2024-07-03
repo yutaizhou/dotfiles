@@ -24,8 +24,6 @@ source $HOME/.shell/external.sh
 source $HOME/.shell/aliases.sh
 alias reload="source $HOME/.bashrc"
 
-# Plugins
-source $HOME/.bash/plugins.bash
 
 # Allow local customizations in the $HOME/.shell_local_after file
 if [ -f $HOME/.shell_local_after ]; then
