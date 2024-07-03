@@ -1,12 +1,11 @@
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-eval "$(thefuck --alias)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
-source ~/.dotfiles/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source $HOME/.dotfiles/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 function zvm_after_init() {
-  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+  [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 }
 
-source ~/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

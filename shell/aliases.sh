@@ -1,12 +1,12 @@
 # Shortcuts for dotbot install
 idf() {
     (echo "Installing Dotfiles (main)")
-    (cd ~/.dotfiles && git pull --ff-only && ./install)
+    (cd $HOME/.dotfiles && git pull --ff-only && ./install)
 }
 
 idfl() {
     (echo "Installing Dotfiles (local)")
-    (cd ~/.dotfiles_local && git pull --ff-only && ./install)
+    (cd $HOME/.dotfiles_local && git pull --ff-only && ./install)
 }
 
 idfa() {
@@ -18,26 +18,7 @@ is_command() {
 	command -v "$1" &> /dev/null
 }
 
-if is_command zoxide
-then 
-    alias cd='z'
-fi 
 
-if is_command bat
-then 
-    alias cat='bat'
-fi
-
-if is_command exa
-then
-    alias ls='exa --color=auto --group-directories-first'
-    alias ll='exa -la --group-directories-first' # long + showhidden 
-    alias lt='exa --tree --level=2 --group-directories-first'
-    alias lt3='exa --tree --level=3 --group-directories-first'
-else
-    alias ls='ls --color=auto --group-directories-first'
-    alias ll='ls -la --group-directories-first'
-fi
 
 
 
@@ -45,6 +26,7 @@ alias cdgr='cd "$(git root)"'
 alias c="clear"
 
 alias t="tmux"
+alias ta="tmux attach"
 alias tl="tldr"
 
 alias grep='grep --color'

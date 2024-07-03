@@ -1,38 +1,38 @@
 # Functions
-source ~/.shell/functions.sh
+source $HOME/.shell/functions.sh
 
-# Allow local customizations in the ~/.shell_local_before file
-if [ -f ~/.shell_local_before ]; then
-    source ~/.shell_local_before
+# Allow local customizations in the $HOME/.shell_local_before file
+if [ -f $HOME/.shell_local_before ]; then
+    source $HOME/.shell_local_before
 fi
 
-# Allow local customizations in the ~/.zshrc_local_before file
-if [ -f ~/.zshrc_local_before ]; then
-    source ~/.zshrc_local_before
+# Allow local customizations in the $HOME/.zshrc_local_before file
+if [ -f $HOME/.zshrc_local_before ]; then
+    source $HOME/.zshrc_local_before
 fi
 
 # External plugins (initialized before)
-source ~/.zsh/plugins_before.zsh
+source $HOME/.zsh/plugins_before.zsh
 
 # Settings
-source ~/.zsh/settings.zsh
+source $HOME/.zsh/settings.zsh
 
 # Bootstrap
-source ~/.shell/bootstrap.sh
+source $HOME/.shell/bootstrap.sh
 
 # External settings
-source ~/.shell/external.sh
+source $HOME/.shell/external.sh
 
 # Aliases
-source ~/.shell/aliases.sh
-alias reload="source ~/.zshrc"
+source $HOME/.shell/aliases.sh
+alias reload="source $HOME/.zshrc"
 
 # External plugins (initialized after)
-source ~/.zsh/plugins_after.zsh
+source $HOME/.zsh/plugins_after.zsh
 
-# Allow local customizations in the ~/.shell_local_after file
-if [ -f ~/.shell_local_after ]; then
-    source ~/.shell_local_after
+# Allow local customizations in the $HOME/.shell_local_after file
+if [ -f $HOME/.shell_local_after ]; then
+    source $HOME/.shell_local_after
 fi
 
 # Allow local customizations in the ~/.zshrc_local_after file

@@ -5,9 +5,18 @@ Dotfiles managed using [Dotbot][dotbot].
 
 This repo is to be complemented with the [local dotfiles][local_dotfiles] for different machines.
 
+On your first installation, be sure to grab the submodules with this:
+
+`git clone --recurse-submodules git@github.com:yutaizhou/dotfiles.git`
+
 Upgrade Dotbot using the following, be sure to commit before doing `./install`.
 
 `git submodule update --remote dotbot`
+
+# Upon first installation..
+
+- Call `PlugInstall` from vim to grab all the plugins
+- install `brew`, then brew install zoxide (with fzf), etc
 
 Credit
 -------
