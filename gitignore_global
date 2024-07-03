@@ -70,7 +70,7 @@
 \#*\#
 \.#*
 .ipynb_checkpoints/
-.vscode/
+#.vscode/
 
 # Logs and databases #
 ######################

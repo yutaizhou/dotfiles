@@ -75,6 +75,7 @@
 [user]
 	useConfigOnly = true # don't guess name and email, always ask 
 	name = Yutai Zhou
+	email = yutaizh@gmail.com
 
 [core]
 	editor=vim
