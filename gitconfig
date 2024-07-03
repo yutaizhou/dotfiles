@@ -75,10 +75,11 @@
 [user]
 	useConfigOnly = true # don't guess name and email, always ask 
 	name = Yutai Zhou
+	email = yutaizh@gmail.com
 
 [core]
 	editor=vim
-	excludesfile = ~/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -90,4 +91,4 @@
 	defaultBranch = master
 
 [include]
-	path = ~/.gitconfig_local
+	path = $HOME/.gitconfig_local
