@@ -79,7 +79,24 @@
 
 [core]
 	editor=vim
-	excludesfile = $HOME/.gitignore_global
+    excludesfile = $HOME/.gitignore_global
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    dark = true
+    # side-by-side = true # has line number on by default
+    line-numbers = true
+    
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -88,7 +105,7 @@
 	required = true
 
 [init]
-	defaultBranch = master
+	defaultBranch = main
 
 [include]
 	path = $HOME/.gitconfig_local

@@ -44,6 +44,8 @@ alias ml="mamba list"
 alias cp='cp -i'
 alias mv='mv -i'
 
+alias mkdir='mkdir -pv'
+
 
 # alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'s
@@ -52,6 +54,8 @@ alias count='find . -type f | wc -l'
 # Git aliases
 alias g="git"
 alias ga="git add"
-alias gs="git status -sb"
 alias gb="git branch"
+alias gd="git diff"
+alias gl="git log --all --decorate --graph --oneline"
 alias gr="git remote"
+alias gs="git status -sb"
