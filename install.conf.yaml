@@ -19,6 +19,7 @@
     $HOME/.bash_profile:
     $HOME/.condarc:
     $HOME/.config/starship.toml: starship.toml
+    $HOME/.config/tealdeer/config.toml: tealdeer.toml
     $HOME/.dotfiles: ''
     $HOME/.gitconfig:
     $HOME/.gitignore_global:
