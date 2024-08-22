@@ -18,6 +18,7 @@
     $HOME/.bashrc:
     $HOME/.bash_profile:
     $HOME/.condarc:
+    $HOME/.config/ruff/pyproject.toml: ruff/pyproject.toml
     $HOME/.config/starship.toml: starship.toml
     $HOME/.config/tealdeer/config.toml: tealdeer.toml
     $HOME/.dotfiles: ''
