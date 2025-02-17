@@ -13,7 +13,7 @@ idfa() {
     (idf; idfl)
 }
 
-# check if the command exists, good for replacement tools like exa and z
+# check if the command exists, good for replaceing CLI tools
 is_command() {
 	command -v "$1" &> /dev/null
 }
