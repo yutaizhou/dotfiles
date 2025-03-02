@@ -1,5 +1,8 @@
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+source <(fzf --zsh)
+eval $(thefuck --alias)
+
 
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 

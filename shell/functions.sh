@@ -80,7 +80,6 @@ is_command() {
 
 
 
-alias reload="source $HOME/.bashrc"
 alias cdgr='cd "$(git root)"'
 alias c="clear"
 

@@ -1,3 +1,4 @@
+alias reload="source $HOME/.zshrc"
 source $HOME/.shell/functions.sh
 
 if [ -f $HOME/.shell_local_before ]; then
@@ -8,17 +9,10 @@ if [ -f $HOME/.zshrc_local_before ]; then
     source $HOME/.zshrc_local_before
 fi
 
-source $HOME/.zsh/plugins_before.zsh
-
-source $HOME/.zsh/settings.zsh
-
 source $HOME/.shell/bootstrap.sh
-
+source $HOME/.zsh/settings.zsh
+source $HOME/.zsh/plugins.zsh
 source $HOME/.shell/external.sh
-
-source $HOME/.shell/aliases.sh
-
-source $HOME/.zsh/plugins_after.zsh
 
 if [ -f $HOME/.shell_local_after ]; then
     source $HOME/.shell_local_after
@@ -56,16 +50,16 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-path=('/Users/yutai/mambaforge/bin' $path)
-path=('/opt/homebrew/bin' $path)
-path=('/opt/homebrew/sbin' $path)
-path=('/Users/yutai/.local/bin' $path)
-path=('/Users/yutai/bin' $path)
-path=('/bin' $path)
+# path=('/Users/yutai/mambaforge/bin' $path) # managed by mamba
+# path=('/opt/homebrew/bin' $path)
+# path=('/opt/homebrew/sbin' $path)
+# path=('/Users/yutai/.local/bin' $path) # bootstrap
+# path=('/Users/yutai/bin' $path) # bootstrap
+# path=('/bin' $path) # already there?
 export PATH
 
 # export PATH="PATH:/bin"
 # export PATH="PATH:$HOME/bin"
-fpath+=~/.zfunc; autoload -Uz compinit; compinit
+# fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 zstyle ':completion:*' menu select
