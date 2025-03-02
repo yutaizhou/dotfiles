@@ -13,28 +13,27 @@
       recursive: true
 
 - link: # symlink location -> original dotfile in repo
-    $HOME/.alacritty.yml:
     $HOME/.bash:
-    $HOME/.bashrc:
-    $HOME/.bash_profile:
+    $HOME/.bashrc: bash/bashrc
+    $HOME/.bash_profile: bash/bash_profile
     $HOME/.condarc:
-    $HOME/.config/ruff/pyproject.toml: ruff/pyproject.toml
-    $HOME/.config/starship.toml: starship.toml
-    $HOME/.config/tealdeer/config.toml: tealdeer.toml
+    $HOME/.config/ruff/pyproject.toml: config/ruff/pyproject.toml
+    $HOME/.config/starship.toml: config/starship.toml
+    $HOME/.config/tealdeer/config.toml: config/tealdeer.toml
     $HOME/.dotfiles: ''
-    $HOME/.gitconfig:
-    $HOME/.gitignore_global:
+    $HOME/.gitconfig: git/gitconfig
+    $HOME/.gitignore_global: git/gitignore_global
     $HOME/.inputrc:
     $HOME/.ipython/profile_default/startup/00-import.py: ipython/00-import.py
     $HOME/.ipython/profile_default/ipython_config.py: ipython/ipython_config.py
     $HOME/.ipython/profile_default/ipython_kernel_config.py: ipython/ipython_kernel_config.py
     $HOME/.shell:
-    $HOME/.tmux.conf:
-    $HOME/.tmuxp: tmuxp
+    $HOME/.tmux.conf: config/tmux.conf
+    $HOME/.config/tmuxp: config/tmuxp
     $HOME/.vim/autoload/plug.vim: vim/plug.vim
-    $HOME/.vimrc:
-    $HOME/.zshrc:
+    $HOME/.vimrc: vim/vimrc
     $HOME/.zsh:
+    $HOME/.zshrc: zsh/zshrc
 
 - shell:
   - git submodule sync --recursive
