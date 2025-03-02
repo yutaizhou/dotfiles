@@ -25,6 +25,11 @@ here() {
 
 there="$HOME/.shell.here"
 
+ruffit() {
+    ruff check --select I --fix
+    ruff format
+}
+
 mcd() {
     mkdir "${1}" && cd "${1}"
 }
