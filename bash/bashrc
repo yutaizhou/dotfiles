@@ -1,4 +1,3 @@
-# Functions
 source $HOME/.shell/functions.sh
 
 # Allow local customizations in the $HOME/.shell_local_before file
@@ -11,19 +10,9 @@ if [ -f $HOME/.bashrc_local_before ]; then
     source $HOME/.bashrc_local_before
 fi
 
-# Settings
-source $HOME/.bash/settings.bash
-
-# Bootstrap
 source $HOME/.shell/bootstrap.sh
-
-# External settings
-source $HOME/.shell/external.sh
-
-# Aliases
-source $HOME/.shell/aliases.sh
-alias reload="source $HOME/.bashrc"
-
+source $HOME/.bash/settings.bash
+source $HOME/.bash/plugins.bash
 
 # Allow local customizations in the $HOME/.shell_local_after file
 if [ -f $HOME/.shell_local_after ]; then
@@ -34,4 +23,20 @@ fi
 if [ -f $HOME/.bashrc_local_after ]; then
     source $HOME/.bashrc_local_after
 fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/yutai/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/yutai/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/yutai/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/yutai/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 
