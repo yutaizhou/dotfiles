@@ -1,11 +1,9 @@
 source $HOME/.shell/functions.sh
 
-# Allow local customizations in the $HOME/.shell_local_before file
 if [ -f $HOME/.shell_local_before ]; then
     source $HOME/.shell_local_before
 fi
 
-# Allow local customizations in the $HOME/.bashrc_local_before file
 if [ -f $HOME/.bashrc_local_before ]; then
     source $HOME/.bashrc_local_before
 fi
