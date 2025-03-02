@@ -1,3 +1,4 @@
+alias reload="source $HOME/.zshrc"
 HISTSIZE=1048576
 HISTFILE="$HOME/.zsh_history"
 SAVEHIST=$HISTSIZE

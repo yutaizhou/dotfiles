@@ -1,5 +1,3 @@
-source $HOME/.shell/functions.sh
-
 if [ -f $HOME/.shell_local_before ]; then
     source $HOME/.shell_local_before
 fi
@@ -8,6 +6,7 @@ if [ -f $HOME/.bashrc_local_before ]; then
     source $HOME/.bashrc_local_before
 fi
 
+source $HOME/.shell/functions.sh
 source $HOME/.shell/bootstrap.sh
 source $HOME/.bash/settings.bash
 source $HOME/.bash/plugins.bash
