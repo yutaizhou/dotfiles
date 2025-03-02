@@ -47,7 +47,7 @@
 	us = restore --staged
 	usp = restore --staged -p
 
-	rem = remote
+	rem = remote -v
 
 	root = rev-parse --show-toplevel
 

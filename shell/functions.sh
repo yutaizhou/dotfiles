@@ -60,12 +60,12 @@ up()
 # Shortcuts for dotbot install
 idf() {
     (echo "Installing Dotfiles (main)")
-    (cd $HOME/.dotfiles && git pull --ff-only && ./install)
+    (cd $HOME/.dotfiles && ./install)
 }
 
 idfl() {
     (echo "Installing Dotfiles (local)")
-    (cd $HOME/.dotfiles_local && git pull --ff-only && ./install)
+    (cd $HOME/.dotfiles_local && ./install)
 }
 
 idfa() {

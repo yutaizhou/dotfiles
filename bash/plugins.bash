@@ -9,6 +9,6 @@
 eval "$(starship init bash)"
 eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
-eval "$(thefuck --alias)"
+eval "$(thefuck --alias fk)"
 
 [ -f $HOME/.fzf.bash ] && source $HOME/.fzf.bash
