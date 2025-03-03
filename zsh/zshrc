@@ -20,17 +20,6 @@ if [ -f $HOME/.zshrc_local_after ]; then
     source $HOME/.zshrc_local_after
 fi
 
-# path=('/Users/yutai/mambaforge/bin' $path) # managed by mamba
-# path=('/opt/homebrew/bin' $path)
-# path=('/opt/homebrew/sbin' $path)
-# path=('/Users/yutai/.local/bin' $path) # bootstrap
-# path=('/Users/yutai/bin' $path) # bootstrap
-# path=('/bin' $path) # already there?
-# export PATH
-
-# export PATH="PATH:/bin"
-# export PATH="PATH:$HOME/bin"
 # fpath+=~/.zfunc; autoload -Uz compinit; compinit
-
 # zstyle ':completion:*' menu select
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
