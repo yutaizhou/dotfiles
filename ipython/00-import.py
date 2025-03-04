@@ -25,6 +25,10 @@ print("imported np, sp, plt")
 
 
 try:
+    os.environ["JAX_PLATFORMS"] = "cpu"
+    os.environ["JAX_DISABLE_JIT"] = "1"
+    os.environ["XLA_PYTHON_CLIENT_PREALLOCATE"] = "false"
+
     import jax
     import jax.nn as jnn
     import jax.numpy as jnp
