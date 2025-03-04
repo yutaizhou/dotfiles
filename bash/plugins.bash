@@ -19,11 +19,9 @@ if [ -f $HOME/.fzf.bash ]; then
 fi
 
 if is_command_verbose uv; then
-    eval "$(uv generate-shell-completion zsh)"
+    eval "$(uv generate-shell-completion bash)"
 fi
 
 if is_command_verbose uvx; then
-    eval "$(uvx --generate-shell-completion zsh)"
+    eval "$(uvx --generate-shell-completion bash)"
 fi
-
-
