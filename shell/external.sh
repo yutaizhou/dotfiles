@@ -1,18 +1,15 @@
 # zoxide
-if is_command zoxide
-then 
+if is_command_verbose zoxide; then 
     alias cd='z'
 fi 
 
 # bat
-if is_command bat
-then 
+if is_command_verbose bat; then 
     alias cat='bat'
 fi
 
 # eza
-if is_command eza
-then
+if is_command_verbose eza; then
     alias ls='eza --color=auto --group-directories-first'
     alias ll='eza -la --group-directories-first' # long + showhidden 
     alias lt='eza --tree --level=2 --group-directories-first'
@@ -23,8 +20,7 @@ else
 fi
 
 # nnn
-if is_command nnn
-then
+if is_command_verbose nnn; then
     n ()
 {
     # Block nesting of nnn in subshells
