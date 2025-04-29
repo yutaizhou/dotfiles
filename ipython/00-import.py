@@ -2,6 +2,7 @@ print("\n=== Importing modules ===")
 
 import functools as ft
 import itertools as it
+import math
 import os
 import sys
 from collections import Counter, defaultdict, deque, namedtuple
@@ -10,9 +11,10 @@ from dataclasses import dataclass
 from datetime import datetime
 from functools import partial
 from pathlib import Path
+from typing import NamedTuple
 
 print(
-    "imported ft, it, os, sys, collections, deepcopy, dataclass, datetime, partial, Path"
+    "imported ft, it, math, os, sys, collections, deepcopy, dataclass, datetime, partial, Path"
 )
 
 import matplotlib.pyplot as plt
@@ -22,6 +24,13 @@ import numpy.random as npr
 import scipy as sp
 
 print("imported np, sp, plt")
+
+try:
+    from einops import rearrange, reduce, repeat
+
+    print("imported einops (rearrange, reduce, repeat)")
+except ModuleNotFoundError:
+    print("einops not installed")
 
 
 try:
@@ -43,31 +52,43 @@ except ModuleNotFoundError:
     print("jax not installed")
 
 
-try:
-    import flax
-    import optax
-    from flax import nnx
+def import_flax_linen():
+    try:
+        import flax
+        import optax
+        from flax import linen as nn
 
-    print("imported flax (nnx), optax")
-except ModuleNotFoundError:
-    print("flax / optax not installed")
-
-
-try:
-    import torch
-    import torch.nn as nn
-    import torch.nn.functional as F
-
-    print("imported torch")
-except ModuleNotFoundError:
-    print("torch not installed")
-
-try:
-    from einops import rearrange, reduce, repeat
-
-    print("imported einops (rearrange, reduce, repeat)")
-except ModuleNotFoundError:
-    print("einops not installed")
+        print("imported flax (linen), optax")
+    except ModuleNotFoundError:
+        print("flax / optax not installed")
 
 
+def import_flax_nnx():
+    try:
+        import flax
+        import optax
+        from flax import nnx
+
+        print("imported flax (nnx), optax")
+    except ModuleNotFoundError:
+        print("flax / optax not installed")
+
+
+def import_torch():
+    try:
+        import torch
+        import torch.nn as nn
+        import torch.nn.functional as F
+
+        print("imported torch")
+    except ModuleNotFoundError:
+        print("torch not installed")
+
+
+print(
+    "More available modules:\n",
+    "  import_flax_linen()\n",
+    "  import_flax_nnx()\n",
+    "  import_torch()\n",
+)
 print("=== Importing finished ===")
