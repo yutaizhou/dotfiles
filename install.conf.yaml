@@ -23,6 +23,7 @@
     $HOME/.config/ruff/pyproject.toml: config/ruff/pyproject.toml
     $HOME/.config/starship.toml: config/starship.toml
     $HOME/.config/tealdeer/config.toml: config/tealdeer.toml
+    $HOME/.config/dust/config.toml: config/dust.toml
     $HOME/.dotfiles: ''
     $HOME/.gitconfig: git/gitconfig
     $HOME/.gitignore_global: git/gitignore_global

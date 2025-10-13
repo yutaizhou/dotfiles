@@ -8,6 +8,11 @@ if is_command_verbose bat; then
     alias cat='bat'
 fi
 
+# dust
+if is_command_verbose dust; then 
+    alias du='dust'
+fi
+
 # eza
 if is_command_verbose eza; then
     alias ls='eza --color=auto --group-directories-first'
